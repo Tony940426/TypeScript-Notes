@@ -22,3 +22,9 @@ let point: { x: number; y: number } = {
     y: 20
 }
 //Object literal
+
+const logNumber: (i: number) => void = (i: number) => {  
+//                                  --> Function starts here. Before that is annotations     
+    console.log(i);
+}
+//Function
