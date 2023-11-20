@@ -8,3 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TypeScript-Notes';
 }
+
+
+//Type Annotations: We the deveopers tell TypScript the type
+//Type Inference: TypeScript guesses the type.
