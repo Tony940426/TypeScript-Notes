@@ -28,3 +28,8 @@ const logNumber: (i: number) => void = (i: number) => {
     console.log(i);
 }
 //Function
+
+let apples;
+apples = 5
+//Type Inference only happens if it is on the same line. If it is on a sperate line, the type becomes any.
+
