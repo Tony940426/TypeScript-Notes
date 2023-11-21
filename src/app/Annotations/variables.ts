@@ -1,4 +1,4 @@
-let apples: number = 5;
+let apple: number = 5;
 let speed: string = 'fast';
 let hasName: boolean = true;
 let nothingMuch: null = null;
@@ -29,7 +29,30 @@ const logNumber: (i: number) => void = (i: number) => {
 }
 //Function
 
-let apples;
-apples = 5
+let apples: number = 5
 //Type Inference only happens if it is on the same line. If it is on a sperate line, the type becomes any.
+//Type inference: We rely on it everytime
 
+//when to use type annotation manually
+//***First One ***
+const json = '{"x": 10, "y": 11}'
+const coordinates: {x: number; y: number}= JSON.parse(json);
+console.log(coordinates)
+//in this case, JASON.parse returns a any type. 
+//any is a type. It means TS has no idea what the type is. It is not  a good thing.
+//Avoid ANY at any cost
+//To avoid it, you put a type annotation in front (in this case it is the {x: number; y: number})
+
+//***Second One ***
+//When we declare a variable but initialize it later. 
+let words = ['Red','Green','Blue']
+let foundWord;
+
+for (let i = 0; i < words.length; i++){
+    if(words[i]=== 'Green'){
+        foundWord = true;
+    }
+}
+
+//To rectify this issue
+//let foundWord: boolean = false
