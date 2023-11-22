@@ -56,3 +56,14 @@ for (let i = 0; i < words.length; i++){
 
 //To rectify this issue
 //let foundWord: boolean = false
+
+//***Third Case ***
+//Variables whose type cannot be inferred correctly.
+let numbers = [-10, -5, 5];
+let numbersAboveZero: boolean | number = false;
+
+for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] > 0){
+        numbersAboveZero = numbers[i]
+    }
+}
