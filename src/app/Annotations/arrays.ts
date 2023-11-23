@@ -21,3 +21,6 @@ carMarkers.map((car: string): string => {
 
 const importantDates: (Date | string)[] = [new Date()];
 importantDates.push('string')
+
+//TUPLE
+//ARRAY-LIKE STRUCTURE WHERE EACH ELEMENT REPRESNETS SOME PREOPRTY OF A RECORD
