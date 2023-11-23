@@ -18,3 +18,6 @@ const myCar = carMarkers[2];
 carMarkers.map((car: string): string => {
     return car.toUpperCase();
 })
+
+const importantDates: (Date | string)[] = [new Date()];
+importantDates.push('string')
